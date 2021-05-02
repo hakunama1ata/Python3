@@ -21,7 +21,7 @@ def isSubSequence(str1, str2):
     # then j is equal to m
     return j == m
  
-# Driver Program
+
  
  
 
@@ -36,6 +36,6 @@ def main():
         B = input()
         print ("POSITIVE" if isSubSequence(B, V) else "NEGATIVE")
 
-
-main()
+if __name__ == "__main__":
+    main()
 
