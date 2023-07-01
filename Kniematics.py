@@ -42,6 +42,7 @@ elif what_to_find=v:
     a=((v*v)-(u*u)/(2*s))
     a=(2*(s-(u*t)))/(t*t)
     print("The final velocity is",v)
+    
 elif what_to_find=u:
     v=float(input("Please enter the value of final velocity"))
     s=float(input("Please enter the value of displacement"))
