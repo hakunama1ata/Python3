@@ -2,13 +2,13 @@ import math
 
 what_to_find=input("What should i find for you ? a= acceleration, s=distance, u=initial velocity, v=final velocity, t=time taken")
 what_to_find.lower
-parameters=[a,s,t,u,v]
+parameters=set(['a','s','t','u','v'])
 while what_to_find not in parameters:
     print("unknown parameter, please enter the correct one!")
     what_to_find=input("What should i find for you ? a= acceleration, s=distance, u=initial velocity, v=final velocity, t=time taken")
 
 print("What are the given values?")
-if what_to_find=a:
+if what_to_find=='a':
     v=float(input("Please enter the value of final velocity"))
     u=float(input("Please enter the value of initial velocity"))
     s=float(input("Please enter the value of displacement"))
@@ -25,7 +25,7 @@ if what_to_find=a:
     a=((v*v)-(u*u)/(2*s))
     a=(2*(s-(u*t)))/(t*t)
     print("The acceleration is",a)
-elif what_to_find=v:
+elif what_to_find=='v':
     u=float(input("Please enter the value of initial velocity"))
     s=float(input("Please enter the value of displacement"))
     t=float(input("Please enter the value of time"))
@@ -43,7 +43,7 @@ elif what_to_find=v:
     a=(2*(s-(u*t)))/(t*t)
     print("The final velocity is",v)
     
-elif what_to_find=u:
+elif what_to_find=='u':
     v=float(input("Please enter the value of final velocity"))
     s=float(input("Please enter the value of displacement"))
     t=float(input("Please enter the value of time"))
@@ -60,7 +60,7 @@ elif what_to_find=u:
     a=((v*v)-(u*u)/(2*s))
     a=(2*(s-(u*t)))/(t*t)
     print("The initial velocity is",u)
-elif what_to_find=t:
+elif what_to_find=='t':
     v=float(input("Please enter the value of final velocity"))
     s=float(input("Please enter the value of displacement"))
     a=float(input("Please enter the value of acceleration"))
